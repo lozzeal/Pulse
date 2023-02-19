@@ -85,9 +85,6 @@ $(document).ready(function(){
 
     $('form').submit(function(e) {
         e.preventDefault();
-        if (!$(this).valid()) {
-            return;
-        }
         $.ajax({
             type: "POST",
             url: "mailer/smart.php",
@@ -97,8 +94,8 @@ $(document).ready(function(){
             $('#consultation, #order').fadeOut();
             $('.overlay, #thanks').fadeIn('slow');
 
-            $('form').trigger('reset')
-        })
+            $('form').trigger('reset');
+        });
         return false;
     });
 
@@ -117,4 +114,7 @@ $(document).ready(function(){
         $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
         return false;
     });
+
+    new WOW().init();
 });
+
