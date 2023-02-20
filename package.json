@@ -13,6 +13,7 @@
     "gulp-autoprefixer": "^6.1.0",
     "gulp-clean-css": "^4.2.0",
     "gulp-cli": "^2.2.0",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^5.0.0",
     "sass": "^1.35.1"
@@ -172,6 +173,7 @@
     "global-prefix": "^1.0.2",
     "glogg": "^1.0.2",
     "graceful-fs": "^4.1.15",
+    "gulp-imagemin": "^7.1.0",
     "gulplog": "^1.0.0",
     "has-ansi": "^2.0.0",
     "has-binary2": "^1.0.3",
